@@ -1,0 +1,158 @@
+
+        html {scroll-behavior: smooth;}
+        section {scroll-margin-top: 70px;}
+        @media (max-width: 992px) {section {scroll-margin-top: 320px;}}
+
+        .hero-img,.hero-txt{opacity: 0; transform: translateY(20px); animation: fade 1s 0.3s forwards;}
+        @keyframes fade{from{opacity: 0; transform: translateY(20px);}
+                        to{opacity: 1; transform: translateY(0px)}
+                        }
+        .hero-btn{opacity: 0; transform: translateY(20px); animation: fade 1s 0.6s forwards;}
+        @keyframes fade{from{opacity: 0; transform: translateY(20px);}
+                        to{opacity: 1; transform: translateY(0px)}
+                        }
+
+        .scroll-icon{opacity:0; animation: bounce 2s 0.9s forwards infinite;}
+        @keyframes bounce{
+                        0%,20%,50%,80%,100%{opacity:1; transform: translateY(0) ; }
+                        40%{transform: translateY(-10px);}
+                        60%{transform: translateY(-5px);}
+                        }   
+        .footer-icon a{color: white;}
+        .footer-icon i:hover{color: #0d6efd; transition:color 0.3s;}
+        .navbar-nav li a {
+                        color: black;
+                        border-radius: 4px;
+                        padding: 12px;
+                        transition: all 0.3s ease;
+                        }
+
+        .navbar-nav li a:hover {
+                                background-color: #0d6efd; 
+                                color: white !important;
+                                }
+
+        .navbar-nav li a.active {
+                                background-color: #0d6efd;
+                                color: white !important;
+                                }
+        #btn-hire{transition: transform 0.2s ease;cursor: pointer;}
+        #btn-hire:hover{transform: scale(1.1);}
+
+        .about-content p {
+                          font-size: 19px;        
+                          line-height: 32px;      
+                          text-align: justify;
+                          margin-bottom: 24px;    
+                        }
+
+        .about-content strong {font-weight: 600;}
+
+        h2 {
+          font-size: 36px;
+          letter-spacing: 1px;
+        }
+
+        #education-experience h4 {
+          font-size: 22px;
+          margin-bottom: 15px;
+          color: #ffffff;
+        }
+
+        #education-experience h5 {
+          font-size: 18px;
+          font-weight: 600;
+          margin-bottom: 6px;
+        }
+
+        #education-experience p {
+          font-size: 16px;
+          line-height: 28px;
+          color: #cccccc;
+          margin-bottom: 15px;
+        }
+
+        #education-experience small {
+          color: #aaaaaa;
+          font-size: 14px;
+        }
+
+        #education-experience hr {
+          border: 0;
+          border-top: 1px solid rgba(255, 255, 255, 0.2);
+          margin: 10px 0 25px;
+        }
+
+        #skills p {
+          font-size: 16px;
+          font-weight: 500;
+          margin-bottom: 8px;
+        }
+
+        .progress {
+          height: 22px;
+          border-radius: 12px;
+        }
+
+        .progress-bar {
+          font-size: 13px;
+          font-weight: 600;
+          border-radius: 12px;
+        }
+
+        .brand-gradient {
+          background: linear-gradient(90deg, #0072ff, #00c6ff);
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .text-gradient {
+          background: linear-gradient(90deg, #00c6ff, #0072ff);
+          background-clip: text;
+          -webkit-background-clip: text;
+          color: transparent;
+          -webkit-text-fill-color: transparent;
+        }
+
+        .project-card {
+          transition: transform 0.4s ease, box-shadow 0.4s ease;
+          cursor: pointer;
+        }
+
+        .project-card:hover {
+          transform: translateY(-10px);
+          box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .project-img {
+          height: 250px;
+          object-fit: cover;
+          transition: transform 0.6s ease;
+        }
+
+        .project-card:hover .project-img {
+          transform: scale(1.1);
+        }
+        .card-overlay {
+          position: absolute;
+          inset: 0;
+          background: linear-gradient(360deg, black,transparent);
+          opacity: 0.8;
+          transition: opacity 0.3s ease;
+        }
+
+        .project-card:hover .card-overlay {
+          opacity: 1;
+        }
+
+        .btn-light {
+          border-radius: 20px;
+          transition: all 0.3s ease;
+        }
+
+        .btn-light:hover {
+          background: linear-gradient(180deg, #00c6ff , #0072ff);
+          color: #fff;
+        }
